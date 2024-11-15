@@ -1,0 +1,47 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.no-scrollbar {
+    scrollbar-width: none;
+}
+
+/* Default Light Mode */
+body {
+  background-color: white;
+  color: black;
+}
+
+/* Light mode header and border */
+header, .border-b {
+  border-color: #ddd; /* Light mode border color */
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #171923; /* Dark background */
+  color: white; /* Light text for dark mode */
+}
+
+/* Dark mode header and border */
+body.dark header, body.dark .border-b {
+  border-color: #444; /* Dark mode border color */
+}
+
+/* You can use Tailwind's dark mode classes directly on elements */
+body.dark .bg-white {
+  background-color: #171923; /* Dark background for white elements */
+}
+
+/* Other elements in dark mode */
+body.dark .card {
+  background-color: #171923;
+  color: white;
+}
