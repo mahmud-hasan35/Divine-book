@@ -6,7 +6,6 @@ import { IoSearchOutline } from "react-icons/io5";
 import { useState } from "react";
 
 
-import { getImage } from "../helper/getImage";
 
 
 function SearchCart({ onClose, data }) {
@@ -41,7 +40,7 @@ function SearchCart({ onClose, data }) {
                             <div key={item.id} className="flex p-4 rounded">
                                 <img
                                     className="w-20 h-20 hover:bg-lime-100"
-                                    src={getImage(`../assets/image/${item.image}`)}
+                                    src={item.image}
                                     alt={item.name}
                                 />
                                 <div className="ml-5">

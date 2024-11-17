@@ -43,7 +43,7 @@ function AddCartModal({ onClose, gallery, onFavorite, onAdd }) {
             </div>
           </div>
           <div className="w-8/12 h-full">
-            <img src={getImage(`../assets/image/${gallery.image}`)}
+            <img src={gallery.image}
               alt="Popup"
               className="max-w-screen h-full object-cover" />
           </div>

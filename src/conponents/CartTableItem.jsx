@@ -1,7 +1,6 @@
 
 import { GrClose } from "react-icons/gr";
 import { RiDeleteBin6Line } from "react-icons/ri";
-import { getImage } from "../helper/getImage";
 
 function CartTableItem({ onClose, cartItems, onDelete, onIncrement }) {
   return (
@@ -44,7 +43,7 @@ function CartTableItem({ onClose, cartItems, onDelete, onIncrement }) {
                   <div className="flex items-center w-3/6 pl-5">
                     <img
                       className="w-16 h-20 mr-4"
-                      src={getImage(`../assets/image/${item.image}`)}
+                      src={item.image}
                       alt={item.name}
                     />
                     <div>

@@ -14,7 +14,7 @@ function GellaryItems({ gallery, onAdd, onFavorite }) {
     <>
       <div className="rounded-lg shadow-lg border p-2 w-full">
         <img
-          src={getImage(`../assets/image/${gallery.image}`)}
+          src={gallery.image}
           alt="Image"
           className="w-full object-cover cursor-pointer"
           onClick={() => setShowModal(true)}
