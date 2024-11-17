@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+
+
 import { useState } from "react";
 import AddCartModal from "./AddCartModal";
 import AddButton from "./AddButton";
@@ -29,7 +31,12 @@ function GellaryItems({ gallery, onAdd, onFavorite }) {
         </div>
         <AddButton gallery={gallery} onAdd={onAdd} onFavorite={onFavorite} />
       </div>
-      {showModal && <AddCartModal onClose={() => setShowModal(false)} />}
+      {showModal && <AddCartModal
+      onClose={() => setShowModal(false)} 
+       gallery={gallery} 
+       onAdd={onAdd}
+       onFavorite={onFavorite} 
+       />}
     </>
   );
 }

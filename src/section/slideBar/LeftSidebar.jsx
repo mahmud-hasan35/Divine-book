@@ -23,9 +23,10 @@ function LeftSidebar({ data, setFilter }) {
                     <FaBars />
                 </button>
             </div>
+            
 
             <div
-                className={`border-r h-[90vh] pr-4 md:pr-5 sticky top-[66px] bg-white 
+                className={`border-r h-[90vh] pr-4 md:pr-5 sticky top-[66px] 
                     ${isSidebarOpen ? "block" : "hidden"} 
                     sm:w-48 md:w-46 ml-2 lg:w-46 xl:w-46 md:block`} 
             >
