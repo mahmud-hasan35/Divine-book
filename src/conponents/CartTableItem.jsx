@@ -39,7 +39,7 @@ function CartTableItem({ onClose, cartItems, onDelete, onIncrement }) {
               cartItems.map((item, index) => (
                 <div
                   key={index}
-                  className="flex justify-between items-center text-white border-b border-gray-700 py-4 transform transition-all duration-300 ease-in-out hover:-translate-y-2"
+                  className="flex justify-between items-center hover:bg-green-200 text-white border-b border-gray-700 py-4 transform transition-all duration-300 ease-in-out hover:-translate-y-2"
                 >
                   <div className="flex items-center w-3/6 pl-5">
                     <img

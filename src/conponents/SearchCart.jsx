@@ -37,7 +37,7 @@ function SearchCart({ onClose, data }) {
                 ) : (
                     <div className="space-y-5 mt-5 overflow-y-auto max-h-96"> 
                         {filteredData.map((item) => (
-                            <div key={item.id} className="flex p-4 rounded">
+                            <div key={item.id} className="flex p-4 rounded hover:bg-green-200 dark:hover:bg-lime-800">
                                 <img
                                     className="w-20 h-20 hover:bg-lime-100 transition-transform duration-300 ease-in-out hover:scale-110 hover:-translate-y-2"
                                     src={item.image}
