@@ -16,7 +16,7 @@ function GellaryItems({ gallery, onAdd, onFavorite }) {
         <img
           src={gallery.image}
           alt="Image"
-          className="w-full object-cover cursor-pointer"
+          className="w-full object-cover cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110 hover:-translate-y-2"
           onClick={() => setShowModal(true)}
         />
         <p className="text-lg">{gallery.name}</p>

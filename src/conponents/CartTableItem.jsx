@@ -43,7 +43,7 @@ function CartTableItem({ onClose, cartItems, onDelete, onIncrement }) {
                 >
                   <div className="flex items-center w-3/6 pl-5">
                     <img
-                      className="w-16 h-20 mr-4"
+                      className="w-16 h-20 mr-4 "
                       src={item.image}
                       alt={item.name}
                     />

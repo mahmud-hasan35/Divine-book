@@ -1,8 +1,8 @@
+/* eslint-disable react/prop-types */
 
 
 import { FaRegHeart, FaHeart } from "react-icons/fa6";
 import { useState } from "react";
-import { getImage } from "../../helper/getImage";
 
 function AddCartModal({ onClose, gallery, onFavorite, onAdd }) {
 
@@ -45,7 +45,7 @@ function AddCartModal({ onClose, gallery, onFavorite, onAdd }) {
           <div className="w-8/12 h-full">
             <img src={gallery.image}
               alt="Popup"
-              className="max-w-screen h-full object-cover" />
+              className="max-w-screen h-full object-cover transition-transform duration-300 ease-in-out hover:scale-110 hover:-translate-y-2" />
           </div>
         </div>
       </div>
